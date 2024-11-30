@@ -23,3 +23,20 @@ Make sure to add and push the pkl or text file of your scraped html (this is spe
 * (Question 11) Number of sentences printed: 1 pt
 * (Question 12) Thoughtful answer based on reported polarity scores: 1 pt
 * (Question 13) Thoughtful answer based on summaries: 1 pt
+
+## Install Libraries
+``` bash
+python3 -m pip install beautifulsoup4 html5lib ipykernel jupyterlab matplotlib requests spacy spacytextblob
+```
+
+## spaCy Pipeline
+```bash
+python3 -m spacy download en_core_web_sm
+```
+
+## Git Commands
+```bash
+git add .
+git commit -m ""
+git push origin main
+```
