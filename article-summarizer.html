@@ -7539,7 +7539,7 @@ a.anchor-link {
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [9]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [20]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">collections</span> <span class="kn">import</span> <span class="n">Counter</span>
@@ -7729,7 +7729,7 @@ All prereqs installed.
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [10]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [21]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="c1"># Fetching data from URL</span>
@@ -7762,7 +7762,7 @@ All prereqs installed.
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [11]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [22]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="c1"># Import BeautifulSoup</span>
@@ -7834,7 +7834,7 @@ Number of Sentences in the Article: 22
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [12]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [23]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="n">nlp</span> <span class="o">=</span> <span class="n">spacy</span><span class="o">.</span><span class="n">load</span><span class="p">(</span><span class="s2">"en_core_web_sm"</span><span class="p">)</span>
@@ -7893,7 +7893,7 @@ The token tom has a frequency of 6
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [13]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [24]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="c1"># Get Lemmas and filter out punctuation, stopwords, and whitespace as requested.</span>
@@ -7947,7 +7947,7 @@ The lemma toothpaste has a frequency of 8
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [14]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [25]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">score_sentence_by_token</span><span class="p">(</span><span class="n">sentence</span><span class="p">,</span> <span class="n">interesting_tokens</span><span class="p">):</span>
@@ -8017,7 +8017,7 @@ Number of Scores: 22
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [15]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [26]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">score_sentence_by_lemma</span><span class="p">(</span><span class="n">sentence</span><span class="p">,</span> <span class="n">interesting_lemmas</span><span class="p">):</span>
@@ -8105,32 +8105,24 @@ Number of Scores: 22
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [16]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [30]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-ipython3"><pre><span></span><span class="c1"># Sentences from the article</span>
-<span class="n">article_sentences</span> <span class="o">=</span> <span class="n">article_text</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s1">'</span><span class="se">\n</span><span class="s1">'</span><span class="p">)</span>  <span class="c1"># Split by newline if not already defined</span>
+<div class="highlight hl-ipython3"><pre><span></span><span class="n">article_sentences</span> <span class="o">=</span> <span class="n">article_text</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s1">'</span><span class="se">\n</span><span class="s1">'</span><span class="p">)</span>
 
-<span class="c1"># make sure we have the scores</span>
-<span class="n">sentence_scores</span> <span class="o">=</span> <span class="p">[</span><span class="n">blob</span><span class="o">.</span><span class="n">sentiment</span><span class="o">.</span><span class="n">polarity</span> <span class="k">for</span> <span class="n">blob</span> <span class="ow">in</span> <span class="p">[</span><span class="n">TextBlob</span><span class="p">(</span><span class="n">sent</span><span class="p">)</span> <span class="k">for</span> <span class="n">sent</span> <span class="ow">in</span> <span class="n">article_sentences</span><span class="p">]]</span>
+<span class="n">sentence_scores</span> <span class="o">=</span> <span class="p">[</span><span class="n">score_sentence_by_token</span><span class="p">(</span><span class="n">sentence</span><span class="o">.</span><span class="n">text</span><span class="p">,</span> <span class="n">interesting_tokens</span><span class="p">)</span> <span class="k">for</span> <span class="n">sentence</span> <span class="ow">in</span> <span class="n">doc</span><span class="o">.</span><span class="n">sents</span><span class="p">]</span>
 
-<span class="c1"># Initialize an empty list for the summary</span>
 <span class="n">summary_sentences</span> <span class="o">=</span> <span class="p">[]</span>
 
-<span class="c1"># Add sentences with a score greater than the token cutoff to the summary list</span>
+
 <span class="k">for</span> <span class="n">i</span><span class="p">,</span> <span class="n">sent</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">article_sentences</span><span class="p">):</span>
-    <span class="k">if</span> <span class="n">sentence_scores</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">&gt;</span> <span class="mf">0.0</span><span class="p">:</span>  <span class="c1"># Using the token cutoff score identified earlier</span>
+    <span class="k">if</span> <span class="n">sentence_scores</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">&gt;</span> <span class="mf">0.2</span><span class="p">:</span> 
         <span class="n">summary_sentences</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">sent</span><span class="o">.</span><span class="n">strip</span><span class="p">())</span>
 
-<span class="c1"># Generate the summary text</span>
+<span class="c1"># Summary Text</span>
 <span class="n">summary_text</span> <span class="o">=</span> <span class="s1">' '</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">summary_sentences</span><span class="p">)</span>
-
-<span class="c1"># Print the summary</span>
-<span class="nb">print</span><span class="p">(</span><span class="s2">"Summary of the Article (Token-Based):"</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">"Summary of the Article (Tokens):"</span><span class="p">)</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">summary_text</span><span class="p">)</span>
-
-<span class="c1"># Print the number of sentences in summary</span>
-<span class="nb">print</span><span class="p">(</span><span class="s2">"</span><span class="se">\n</span><span class="s2">Number of Sentences in the Summary:"</span><span class="p">,</span> <span class="nb">len</span><span class="p">(</span><span class="n">summary_sentences</span><span class="p">))</span>
 </pre></div>
 </div>
 </div>
@@ -8143,10 +8135,8 @@ Number of Scores: 22
 <div class="jp-OutputArea-child">
 <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
-<pre>Summary of the Article (Token-Based):
+<pre>Summary of the Article (Tokens):
 Tom's of Maine toothpaste made with bacteria-contaminated water, says FDA - ABC News ABC News Video Live Shows Elections 538 Shop Log In Stream on Tom's of Maine toothpaste made with bacteria-contaminated water, says FDA The location where the products were made had a "black mold-like substance." By Leah Sarnoff November 19, 2024, 5:57 PM 0:28 Tom's of Maine toothpaste is seen on a shelf, March 28, 2006, in Kennebunk, Maine. Joe Raedle/Getty Images An inspection of a Tom's of Maine manufacturing facility found that the brand's toothpaste was produced with water containing bacteria, and a "black mold-like substance" was discovered at the location, according to the Food and Drug Administration. In a letter to the brand's parent company, Colgate-Palmolive, the FDA said a strain of bacteria called Pseudomonas aeruginosa -- which can cause blood and lung infections -- was found in water samples used to make Tom's Simply White Clean Mint Paste. The water samples were taken between June 2021 and October 2022, according to the FDA. Additionally, another strain of bacteria, called Paracoccus yeei, was discovered in a batch of Tom's Wicked Cool! Anticavity Toothpaste. Tom's of Maine toothpaste is seen on a shelf, March 28, 2006, in Kennebunk, Maine. Joe Raedle/Getty Images MORE: FDA approves 1st new drug for schizophrenia in more than 30 years "Water is a major ingredient in many of your OTC drug products. It is essential that you employ a water system that is robustly designed, and that you effectively control, maintain, and monitor the system to ensure it consistently produces water suitable for pharmaceutical use," the FDA said in the Nov. 5 letter. The inspection of the facility in Sanford, Maine, found "a black mold-like substance," in multiple areas near production equipment, according to the FDA's letter. The inspection was conducted in May of this year, the FDA said. MORE: Thousands of bottles of popular antidepressant recalled: 3 things to know A "powder residue" was also found near a batch of Tom's Silly Strawberry Anticavity toothpaste, which is marketed for "kids and parents," according to the company. "It is essential that your facility is in a good state of repair and sanitary conditions are maintained to protect drug products from potential routes of contamination," the FDA said in the letter. The agency requested that Colgate-Palmolive supply additional documentation of manufacturing operations with a "thorough review of all microbiological hazards" and submit results of that testing. In a statement to ABC News, a spokesperson for Colgate-Palmolive said the company is working with the FDA to remedy the issues raised during the inspection. "We have always tested finished goods before they leave our control, and we remain fully confident in the safety and quality of the toothpaste we make," the company said. "In addition, we have engaged water specialists to evaluate our systems at Sanford, have implemented additional safeguards to ensure compliance with FDA standards, and our water testing shows no issues," the company added. Popular Reads Police in Georgia move again to disperse protests over the suspension of EU talks Dec 2, 4:31 AM Two more Democrats join race for DNC chair Dec 1, 2:24 PM Joan Vassos, Chock Chapple share holiday photo Dec 2, 12:44 PM 8 dead in a mass shooting in a cartel-plagued town in central Mexico Dec 1, 3:28 PM Michelle Yeoh on her infertility journey Nov 19, 11:49 AM ABC News Live 24/7 coverage of breaking news and live events ABC News Network About Nielsen Measurement Children's Online Privacy Policy Contact Us Do Not Sell or Share My Personal Information Interest-Based Ads Privacy Policy Terms of Use Your US State Privacy Rights © 2024 ABC News
-
-Number of Sentences in the Summary: 1
 </pre>
 </div>
 </div>
@@ -8165,16 +8155,40 @@ Number of Sentences in the Summary: 1
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [31]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-ipython3"><pre><span></span> 
+<div class="highlight hl-ipython3"><pre><span></span><span class="c1"># Calculate the polarity score for the summary</span>
+<span class="n">summary_blob</span> <span class="o">=</span> <span class="n">TextBlob</span><span class="p">(</span><span class="n">summary_text</span><span class="p">)</span>
+<span class="n">summary_polarity</span> <span class="o">=</span> <span class="n">summary_blob</span><span class="o">.</span><span class="n">sentiment</span><span class="o">.</span><span class="n">polarity</span>
+
+<span class="c1"># Count the number of sentences in the summary</span>
+<span class="n">num_summary_sentences</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">summary_sentences</span><span class="p">)</span>
+
+<span class="c1"># Print the results</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">"</span><span class="se">\n</span><span class="s2">Polarity Score of the Summary (Token-Based):"</span><span class="p">,</span> <span class="n">summary_polarity</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">"Number of Sentences in the Summary:"</span><span class="p">,</span> <span class="n">num_summary_sentences</span><span class="p">)</span>
 </pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child">
+<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
+<pre>
+Polarity Score of the Summary (Token-Based): 0.21212121212121213
+Number of Sentences in the Summary: 1
+</pre>
 </div>
 </div>
 </div>
@@ -8270,16 +8284,31 @@ Number of Sentences in the Summary: 1
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [17]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [29]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="o">!</span>jupyter<span class="w"> </span>nbconvert<span class="w"> </span>--to<span class="w"> </span>html<span class="w"> </span>article-summarizer.ipynb
 </pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child">
+<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
+<pre>[NbConvertApp] Converting notebook article-summarizer.ipynb to html
+[NbConvertApp] WARNING | Alternative text is missing on 2 image(s).
+[NbConvertApp] Writing 378132 bytes to article-summarizer.html
+</pre>
 </div>
 </div>
 </div>
