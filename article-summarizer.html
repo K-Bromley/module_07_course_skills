@@ -7539,7 +7539,7 @@ a.anchor-link {
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [201]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [249]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">collections</span> <span class="kn">import</span> <span class="n">Counter</span>
@@ -7729,7 +7729,7 @@ All prereqs installed.
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [202]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [250]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="c1"># Fetching data from URL</span>
@@ -7762,7 +7762,7 @@ All prereqs installed.
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [203]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [251]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="c1"># Import BeautifulSoup</span>
@@ -7834,7 +7834,7 @@ Number of Sentences in the Article: 25
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [204]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [252]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="n">nlp</span> <span class="o">=</span> <span class="n">spacy</span><span class="o">.</span><span class="n">load</span><span class="p">(</span><span class="s2">"en_core_web_sm"</span><span class="p">)</span>
@@ -7893,7 +7893,7 @@ The token tom has a frequency of 6
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [205]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [253]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="c1"># Get Lemmas and filter out punctuation, stopwords, and whitespace as requested.</span>
@@ -7947,7 +7947,7 @@ The lemma toothpaste has a frequency of 8
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [206]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [254]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">score_sentence_by_token</span><span class="p">(</span><span class="n">sentence</span><span class="p">,</span> <span class="n">interesting_tokens</span><span class="p">):</span>
@@ -7973,6 +7973,8 @@ The lemma toothpaste has a frequency of 8
 <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"Min: </span><span class="si">{</span><span class="nb">min</span><span class="p">(</span><span class="n">token_sentence_scores</span><span class="p">)</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
 <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"Max: </span><span class="si">{</span><span class="nb">max</span><span class="p">(</span><span class="n">token_sentence_scores</span><span class="p">)</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
 <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"Number of Scores: </span><span class="si">{</span><span class="nb">len</span><span class="p">(</span><span class="n">token_sentence_scores</span><span class="p">)</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
+
+<span class="c1"># The most common scores appear to be between 0.0 and 0.1</span>
 </pre></div>
 </div>
 </div>
@@ -8017,7 +8019,7 @@ Number of Scores: 25
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [207]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [255]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">score_sentence_by_lemma</span><span class="p">(</span><span class="n">sentence</span><span class="p">,</span> <span class="n">interesting_lemmas</span><span class="p">):</span>
@@ -8043,6 +8045,8 @@ Number of Scores: 25
 <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"Min: </span><span class="si">{</span><span class="nb">min</span><span class="p">(</span><span class="n">lemma_sentence_scores</span><span class="p">)</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
 <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"Max: </span><span class="si">{</span><span class="nb">max</span><span class="p">(</span><span class="n">lemma_sentence_scores</span><span class="p">)</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
 <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"Number of Scores: </span><span class="si">{</span><span class="nb">len</span><span class="p">(</span><span class="n">lemma_sentence_scores</span><span class="p">)</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
+
+<span class="c1"># The most common scores appear to be between 0.0 and 0.1</span>
 </pre></div>
 </div>
 </div>
@@ -8105,7 +8109,7 @@ Number of Scores: 25
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [208]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [256]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="c1"># Cutoff for Tokens</span>
@@ -8165,7 +8169,7 @@ An inspection of a Tom's of Maine manufacturing facility found that the brand's 
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [209]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [257]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="n">doc</span> <span class="o">=</span> <span class="n">nlp</span><span class="p">(</span><span class="n">summary_tokens</span><span class="p">)</span>
@@ -8227,7 +8231,7 @@ Number of Sentences in Summary: 9
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [210]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [258]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="n">cutoff_score_lemmas</span> <span class="o">=</span> <span class="mf">0.05</span>
@@ -8284,7 +8288,7 @@ An inspection of a Tom's of Maine manufacturing facility found that the brand's 
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [211]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [259]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="n">doc</span> <span class="o">=</span> <span class="n">nlp</span><span class="p">(</span><span class="n">summary_lemmas</span><span class="p">)</span>
@@ -8336,11 +8340,9 @@ Number of Sentences in Summary: 9
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
 <h2 id="Task-12">Task 12<a class="anchor-link" href="#Task-12">¶</a></h2><ol start="12">
-<li><p>Compare your polarity scores of your summaries to the polarity scores of the initial article.  Is there a difference?  Why do you think that may or may not be?.  Answer in this Markdown cell.</p>
-</li>
-<li><p>Answer: There is a slight difference in the polarity scores between the summary and the whole article. The entire article seems to be slightly more positive than just the summary is. This could be there are more positive words in the remainder of the article sentences which increases its overall polarity. I think overall it seems to be fairly accurate in terms of how the article is written and the summary sentences selected.</p>
-</li>
+<li>Compare your polarity scores of your summaries to the polarity scores of the initial article.  Is there a difference?  Why do you think that may or may not be?.  Answer in this Markdown cell.</li>
 </ol>
+<h5 id="Answer:-There-is-a-slight-difference-in-the-polarity-scores-between-the-summary-and-the-whole-article.-The-entire-article-seems-to-be-slightly-more-positive-than-just-the-summary-is-by-~.03-points.-This-could-be-because-there-are-more-positive-words-in-the-remainder-of-the-article-sentences-not-included-in-the-summary,-which-increases-its-overall-polarity.-I-think-overall-it-seems-to-be-fairly-accurate-in-terms-of-how-the-article-is-written-and-the-summary-sentences-selected.">Answer: There is a slight difference in the polarity scores between the summary and the whole article. The entire article seems to be slightly more positive than just the summary is by ~.03 points. This could be because there are more positive words in the remainder of the article sentences not included in the summary, which increases its overall polarity. I think overall it seems to be fairly accurate in terms of how the article is written and the summary sentences selected.<a class="anchor-link" href="#Answer:-There-is-a-slight-difference-in-the-polarity-scores-between-the-summary-and-the-whole-article.-The-entire-article-seems-to-be-slightly-more-positive-than-just-the-summary-is-by-~.03-points.-This-could-be-because-there-are-more-positive-words-in-the-remainder-of-the-article-sentences-not-included-in-the-summary,-which-increases-its-overall-polarity.-I-think-overall-it-seems-to-be-fairly-accurate-in-terms-of-how-the-article-is-written-and-the-summary-sentences-selected.">¶</a></h5>
 </div>
 </div>
 </div>
@@ -8352,11 +8354,9 @@ Number of Sentences in Summary: 9
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
 <h2 id="Task-13">Task 13<a class="anchor-link" href="#Task-13">¶</a></h2><ol start="13">
-<li><p>Based on your reading of the original article, which summary do you think is better (if there's a difference).  Why do you think this might be?</p>
-</li>
-<li><p>Answer: There was not any difference for me in the summaries, I believe this could be due to short nature of the article as it is only 23 sentences long. Perhaps in the future it might be good to analyze a longer article or a scientific journal article to determine sentiments and gather a summary.</p>
-</li>
+<li>Based on your reading of the original article, which summary do you think is better (if there's a difference).  Why do you think this might be?</li>
 </ol>
+<h5 id="Answer:-There-was-not-any-difference-for-me-in-the-summaries,-I-believe-this-could-be-due-to-short-nature-of-the-article-as-it-is-only-23-sentences-long.-Perhaps-in-the-future-it-might-be-good-to-analyze-a-longer-article-or-a-scientific-journal-article-to-determine-sentiments-and-gather-a-summary.">Answer: There was not any difference for me in the summaries, I believe this could be due to short nature of the article as it is only 23 sentences long. Perhaps in the future it might be good to analyze a longer article or a scientific journal article to determine sentiments and gather a summary.<a class="anchor-link" href="#Answer:-There-was-not-any-difference-for-me-in-the-summaries,-I-believe-this-could-be-due-to-short-nature-of-the-article-as-it-is-only-23-sentences-long.-Perhaps-in-the-future-it-might-be-good-to-analyze-a-longer-article-or-a-scientific-journal-article-to-determine-sentiments-and-gather-a-summary.">¶</a></h5>
 </div>
 </div>
 </div>
@@ -8376,7 +8376,7 @@ Number of Sentences in Summary: 9
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [212]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [260]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="o">!</span>jupyter<span class="w"> </span>nbconvert<span class="w"> </span>--to<span class="w"> </span>html<span class="w"> </span>article-summarizer.ipynb
@@ -8394,7 +8394,7 @@ Number of Sentences in Summary: 9
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
 <pre>[NbConvertApp] Converting notebook article-summarizer.ipynb to html
 [NbConvertApp] WARNING | Alternative text is missing on 2 image(s).
-[NbConvertApp] Writing 381891 bytes to article-summarizer.html
+[NbConvertApp] Writing 383102 bytes to article-summarizer.html
 </pre>
 </div>
 </div>
